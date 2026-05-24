@@ -97,7 +97,7 @@ Ke každému projektu mohou být přidány:
 # 📬 Kontakt
 
 💻 Web portfolio:  
-https://basldev.dev
+https://basldev.fun
 
 📧 Email:  
 basleduard@gmail.com
