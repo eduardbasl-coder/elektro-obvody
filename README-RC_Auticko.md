@@ -1,25 +1,54 @@
 # Drátový Ovladač pro DC Motory (3-Motorový Systém)
 
-Tento projekt popisuje zapojení a princip fungování jednoduchého ručního ovladače pro nezávislé ovládání tří stejnosměrných (DC) motorů pomocí tlačítek. Systém je napájen z jednoho centrálního zdroje přes napájecí konektor.
+Tento projekt popisuje ruční ovladač a podvozek se třemi nezávisle ovládanými stejnosměrnými (DC) motory. Systém využívá mechanické konstrukce ze spájených DPS, napájení z externího adaptéru a bezpájecí svorkové propojení kabeláže.
 
-## 🛠️ Technické Specifikace
+## 🛠️ Seznam Součástek (BOM)
 
-### Napájení
-* **Vstupní napájení:** 12V DC (přes 12V DC Jack)
-* **Pracovní napětí motorů:** 5V DC
+### Elektronika a Motory
+* **3×** DC 5V motor (s koly podle schématu: 480mA, 80mA, 240mA)
+* **3×** Spínací tlačítko (Push button)
+* **3×** Zelená LED dioda (5mm)
+* **3×** Rezistor 470 $\Omega$ (předřadné odpory pro LED)
+* **1×** Rezistor 15 $\Omega$
+* **1×** Rezistor 32 $\Omega$
+* **1×** Rezistor 82 $\Omega$
+* **1×** DC Jack konektor (samice na šasi/DPS)
+* **1×** Napájecí adaptér (síťový zdroj)
 
-### Komponenty
-* **1. motor:** DC 5V motor s kolem (Odběr: **480 mA**)
-* **2. motor:** DC 5V motor s kolem (Odběr: **80 mA**)
-* **3. motor:** DC 5V motor se 2 koly (Odběr: **240 mA**)
-* **Ovládací prvky:** 3× spínací tlačítko (Push button) s indikační LED diodou a rezistorem
-* **Kabeláž:** Propojovací kabel o délce **1,5 m** (zajišťuje manipulační prostor pro jízdu)
+### Mechanické díly, upevnění a materiál
+* **2×** DPS (PCB) o rozměru 6×4 cm
+* **2×** DPS (PCB) o rozměru 8×3 cm
+* **2×** 3-pinová šroubovací nebo páčková svorka
+* **5 m** Propojovací kabel (celková metráž pro vedení a vnitřní spoje)
+* **5 g** Pájecí cín (s tavidlem)
+* **Sada** Stahovacích pásků (Zip-ties)
+* **1×** Lepicí páska (Lepenka)
+
+---
+
+## 🏗️ Konstrukce a Mechanické Řešení
+
+Projekt je rozdělen na dvě hlavní fyzické části vyrobené ze standardních plošných spojů (PCB) s kombinovaným mechanickým upevněním:
+
+* **Ovladač (Kontroler):** Je tvořen ze **dvou slepených DPS o rozměru 6×4 cm**. Slouží jako ergonomická krabička/šasi pro uložení 3 tlačítek, indikačních LED diod, rezistorů a napájecího DC Jacku.
+* **Podvozek:** Istalován ze **dvou DPS o rozměru 8×3 cm slepených do tvaru písmene „T“**. Tato konstrukce tvoří pevný nosný rám pro celý model.
+* **Uchycení pohonu:** Kola a motory jsou k tomuto T-podvozku pevně a bezpečně fixovány pomocí kombinace **lepicí pásky (lepenky)** a **stahovacích pásků (zip-ties)**, což zajišťuje dostatečnou tuhost při jízdě a tlumí vibrace.
+
+---
+
+## 🔌 Zapojení a Kabeláž ve Svorkách
+
+Propojení mezi ovladačem a jedoucí platformou (podvozkem) je řešeno flexibilně pomocí svorek, což umožňuje snadnou demontáž:
+
+1. **Dlouhé vedení:** Z celkových 5 metrů kabelu je vytvořen **1,5m svazek**, který dává modelu dostatečnou volnost pohybu při jízdě.
+2. **Svorkovnice:** Na straně ovladače i podvozku jsou osazeny **2× 3-pinové svorky**.
+3. **Napájecí linie:** Tři samostatné napájecí vodiče (pro každý motor jeden) jsou pevně dotaženy ve svorkách, což zajišťuje spolehlivý kontakt bez nutnosti neustálého pájení při přenášení.
+4. **Napájení:** Vstupní napětí z **napájecího adaptéru** vstupuje přes **DC jack konektor** rovnou do ovladače.
 
 ---
 
 ## 🕹️ Logika Ovládání
 
-Každé tlačítko na ovladači ovládá právě jeden konkrétní motor. Motor je v provozu pouze po dobu fyzického stisknutí příslušného tlačítka.
 
 
 | Ovládací prvek | Akce | Výsledek |
@@ -30,18 +59,11 @@ Každé tlačítko na ovladači ovládá právě jeden konkrétní motor. Motor 
 
 ---
 
-## 🔌 Schéma Zapojení
+## 🚀 Postup Montáže
 
-Celý systém sdílí společnou zem (GND) a napájecí větve. Detaily zapojení:
-
-1. **Napájecí uzel:** Hlavní přívod energie je realizován přes `12V DC Jack`.
-2. **Indikace a ochrana:** U každého tlačítka je zapojena indikační LED dioda s ochranným předřadným rezistorem, která signalizuje sepnutí okruhu.
-3. **Dlouhé vedení:** Mezi ovládacím panelem (tlačítky) a samotnými motory je zařazen `1,5m kabel`, který funguje jako pupeční šňůra pro zachování mobility modelu.
-
----
-
-## 🚀 Zprovoznění
-
-1. Připojte stabilizovaný napájecí zdroj do **12V DC Jacku**.
-2. Rozviňte **1,5m kabel**, aby měl model dostatek prostoru pro pohyb.
-3. Stisknutím jednotlivých tlačítek otestujte funkčnost a směr otáčení každého motoru.
+1. **Slepení šasi:** Slepte k sobě dvě PCB 6×4 (ovladač) a dvě PCB 8×3 do tvaru "T" (podvozek).
+2. **Montáž kol a motorů:** Umístěte motory na podvozek z PCB do požadované pozice. Omotejte je **lepenkou** pro prvotní fixaci a následně je pevně stáhněte **zip-ties (stahovacími pásky)** k desce plošného spoje.
+3. **Pájení ovladače:** Osaďte tlačítka, LED diody, 470 $\Omega$ rezistory a výkonové rezistory (15 $\Omega$, 32 $\Omega$, 82 $\Omega$) podle schématu.
+4. **Instalace svorek:** Připájejte 3-pinové svorky na ovladač i podvozek.
+5. **Příprava kabelu:** Odměřte 1,5m přívodní kabel, odizolujte konce drátů a zajistěte je do svorek na obou stranách.
+6. **Test:** Zapojte adaptér do DC Jacku a otestujte stiskem tlačítek funkčnost jednotlivých motorů.
