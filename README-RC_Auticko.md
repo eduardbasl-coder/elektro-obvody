@@ -13,7 +13,7 @@ Tento projekt popisuje ruční ovladač a podvozek se třemi nezávisle ovládan
 * **1×** Rezistor 32 $\Omega$
 * **1×** Rezistor 82 $\Omega$
 * **1×** DC Jack konektor (samice na šasi/DPS)
-* **1×** Napájecí adaptér (síťový zdroj)
+* **1×** Napájecí adaptér 12V DC (síťový zdroj)
 
 ### Mechanické díly, upevnění a materiál
 * **2×** DPS (PCB) o rozměru 6×4 cm
