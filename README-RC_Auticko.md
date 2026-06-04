@@ -1,4 +1,4 @@
-# Drátový Ovladač pro DC Motory (3-Motorový Systém)
+# Drátový Ovladač pro DC Motory (3-Motorový Systém) - v1.0
 
 Tento projekt popisuje ruční ovladač a podvozek se třemi nezávisle ovládanými stejnosměrnými (DC) motory. Systém využívá mechanické konstrukce ze spájených DPS, napájení z externího adaptéru a bezpájecí svorkové propojení kabeláže.
 
@@ -67,3 +67,5 @@ Propojení mezi ovladačem a jedoucí platformou (podvozkem) je řešeno flexibi
 4. **Instalace svorek:** Připájejte 3-pinové svorky na ovladač i podvozek.
 5. **Příprava kabelu:** Odměřte 1,5m přívodní kabel, odizolujte konce drátů a zajistěte je do svorek na obou stranách.
 6. **Test:** Zapojte adaptér do DC Jacku a otestujte stiskem tlačítek funkčnost jednotlivých motorů.
+##Závěr: Fail (Shořel 15 ohm rezistor u 480mA motoru, zakouřil jsem si pokoj a spálil si ruku..
+#Verze v2.0 v přípravě
