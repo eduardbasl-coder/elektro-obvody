@@ -68,5 +68,5 @@ Propojení mezi ovladačem a jedoucí platformou (podvozkem) je řešeno flexibi
 5. **Příprava kabelu:** Odměřte 1,5m přívodní kabel, odizolujte konce drátů a zajistěte je do svorek na obou stranách.
 6. **Test:** Zapojte adaptér do DC Jacku a otestujte stiskem tlačítek funkčnost jednotlivých motorů.
 --
-## Závěr: Fail (Shořel 15 ohm rezistor u 480mA motoru, zakouřil jsem si pokoj a spálil si ruku..
-#Verze v2.0 v přípravě
+## Závěr: 🔥 Fail (Shořel 15 ohm rezistor u 480mA motoru, zakouřil jsem si pokoj a spálil si ruku..
+# Verze v2.0 v přípravě 🛠️
