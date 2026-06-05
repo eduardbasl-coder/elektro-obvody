@@ -48,7 +48,6 @@ Rezistor se zapojuje sériově nebo paralelně podle účelu. Nemá polaritu, ta
 - Ochrana vstupů IC (Integrated Circuit = integrovaný obvod) před přepětím
 
 ### Vzorečky
-```text
 ### Vzorečky
 
 #### Ohmův zákon
@@ -81,4 +80,3 @@ R = R₁ + R₂ + R₃ + ...
 
 pro dva rezistory:
 R = (R₁ × R₂) / (R₁ + R₂)
-```
