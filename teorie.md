@@ -273,6 +273,7 @@ LED se zapojuje vždy **v sérii s rezistorem**, který omezuje proud.
 - Červené LED mají nižší napětí (~1,8–2,2 V)
 - Jas se dá řídit PWM (Pulse Width Modulation = řízení výkonu pulzy)
 - Přehřátí zkracuje životnost
+- Delší nožička = katoda | Kratší = anoda
 
 ### Příklady použití
 - Stavová LED na mikrokontroléru
