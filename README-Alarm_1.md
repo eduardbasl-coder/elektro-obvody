@@ -1,4 +1,4 @@
-# Tranzistorový Alarm při Přerušení Smyčky - v1.0
+# 🚨 Tranzistorový Alarm při Přerušení Smyčky - v1.0
 
 Tento projekt popisuje konstrukci jednoduchého zabezpečovacího systému (alarmu), který reaguje na přerušení hlídaného vodiče. Původní koncept navržený pro napětí 3,7V byl úspěšně modifikován pro bezpečný a spolehlivý provoz pod napětím 12V DC bez rizika zničení komponent.
 
@@ -7,9 +7,9 @@ Tento projekt popisuje konstrukci jednoduchého zabezpečovacího systému (alar
 ### Elektronika a Indikace
 * **1×** Bipolární tranzistor NPN (BC547 nebo univerzální NPN z Tinkercadu)
 * **1×** LED dioda (5mm, libovolná barva)
-* **1×** Rezistor 100 k$\Omega$ (horní odpor napěťového děliče)
-* **1×** Rezistor 1 k$\Omega$ (původně 10 k$\Omega$, upraveno pro stabilizaci báze při 12V)
-* **1×** Rezistor 1 k$\Omega$ (nově přidaný předřadný odpor pro ochranu LED)
+* **1×** Rezistor 100  Ω (horní odpor napěťového děliče)
+* **1×** Rezistor 1 k Ω (původně 10 k Ω, upraveno pro stabilizaci báze při 12V)
+* **1×** Rezistor 1 k Ω (nově přidaný předřadný odpor pro ochranu LED)
 * **1×** Napájecí adaptér 12V DC (nebo laboratorní zdroj)
 
 ### Mechanické díly, vodiče a materiál
@@ -65,3 +65,4 @@ Celý obvod je postaven na principu napěťového děliče a řízení proudu do
 
 ## Závěr: 🎉 Úspěch (Verze 1.0 plně funkční bez kouře a popálenin!)
 # Projekt úspěšně dokončen 🛠️
+# Odkaz na Schéma: https://www.tinkercad.com/things/9O36ZLyY93i-alarm-1
