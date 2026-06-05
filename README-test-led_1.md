@@ -6,7 +6,7 @@ Tento projekt popisuje konstrukci paralelně zapojeného indikačního panelu se
 
 ### Elektronika a Indikace
 * **6×** Spínací tlačítko (Push button - čtyřpinové)
-* **6×** LED dioda (5mm, různé barvy pro vizuální rozlišení: 2× červená, 2× hnědá/oranžová, 2× žlutá, 2× šedá/bílá, 2× zelená, 2× modrá - zapojené v sériových dvojicích)
+* **12×** LED dioda (5mm, různé barvy pro vizuální rozlišení: 2× červená, 2× hnědá/oranžová, 2× žlutá, 2× šedá/bílá, 2× zelená, 2× modrá - zapojené v sériových dvojicích)
 * **1×** Výkonový rezistor (Společný předřadný odpor pro celou větev)
 * **1×** Napájecí zdroj 12V DC (Laboratorní nastavitelný zdroj nebo síťový adaptér)
 
