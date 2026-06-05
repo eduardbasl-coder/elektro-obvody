@@ -301,3 +301,148 @@ U = R × I
 
 #### Výkon rezistoru v LED obvodu
 P = (Uin - Vf) × I
+
+## 🔀 Tranzistor
+
+### Základní informace
+- Typ: Aktivní polovodičová součástka
+- Kategorie: Tranzistory
+- Jednotka: Beze specifické jednotky (řídicí prvek)
+- Polarita: Záleží (NPN/PNP nebo N/MOSFET)
+- Schématická značka: Q / T
+- Hlavní funkce: Spínání a zesilování elektrického signálu
+- Typické napětí: jednotky V až desítky V (dle typu)
+- Typický proud: mA až A (dle typu)
+
+### Popis
+Tranzistor je elektronický spínač nebo zesilovač, který ovládá velký proud pomocí malého řídicího signálu.
+
+### Použití
+- Elektronické spínání (ON/OFF)
+- Zesilovače signálu
+- Řízení motorů (DC motor, ventilátory)
+- PWM řízení (PWM = Pulse Width Modulation, řízení výkonu pulzy)
+- Logické obvody (digitální elektronika)
+- Řízení výkonových zátěží
+
+### Jak se zapojuje
+
+#### BJT (Bipolar Junction Transistor)
+- Vývody: B (báze), C (kolektor), E (emitor)
+- Malý proud do báze řídí větší proud mezi kolektorem a emitorem
+- Použití jako spínač nebo zesilovač
+
+#### MOSFET (Metal-Oxide Semiconductor Field-Effect Transistor)
+- Vývody: G (gate), D (drain), S (source)
+- Napětí na gate řídí proud mezi drain a source
+- Vhodný pro vyšší proudy a účinné spínání
+
+### Důležité parametry
+- Vce / Vds: maximální napětí mezi vývody
+- Ic / Id: maximální proud
+- Hfe (BJT): zesílení proudu
+- Rds(on) (MOSFET): odpor v sepnutém stavu
+- Gate threshold voltage (MOSFET): napětí pro sepnutí
+
+### Praktické poznámky
+- Špatné zapojení může tranzistor zničit okamžitě
+- MOSFET je efektivnější pro spínání výkonu než BJT
+- BJT potřebuje proud do báze, MOSFET jen napětí
+- Při spínání indukčních zátěží (motor) je nutná ochranná dioda
+- Často se používá rezistor na bázi/gate pro omezení proudu
+
+### Příklady použití
+- Spínání LED pásků
+- Ovládání DC motorů
+- Relé driver (ovládání relé)
+- Logické zesílení signálu z mikrokontroléru
+- PWM regulace ventilátorů
+
+### Vzorečky
+
+#### Základní zesílení BJT
+Ic = β × Ib  
+
+- Ic = kolektorový proud
+- Ib = proud báze
+- β = zesílení tranzistoru
+
+---
+
+#### Ohmův zákon (pro řídicí obvody)
+U = R × I  
+
+---
+
+#### Výkon ztráty
+P = U × I  
+P = I² × R  
+P = U² / R
+
+## 🔋 Dioda
+
+### Základní informace
+- Typ: Aktivní polovodičová součástka
+- Kategorie: Dioda
+- Jednotka: Volt (V) – dopředné napětí (Uf)
+- Polarita: Ano (anoda +, katoda -)
+- Schématická značka: D
+- Hlavní funkce: Propouští proud pouze jedním směrem
+- Typické napětí: ~0,7 V (křemíková), ~0,2–0,3 V (Schottky)
+- Typický proud: mA až A (dle typu)
+
+### Popis
+Dioda je polovodičová součástka, která vede elektrický proud pouze v jednom směru a blokuje proud v opačném směru.
+
+### Použití
+- Ochrana proti přepólování napájení
+- Usměrnění AC na DC (usměrňovače)
+- Ochrana proti zpětnému napětí (např. motory, relé)
+- Signálové oddělení
+- Spínací obvody
+
+### Jak se zapojuje
+- Anoda (+) → vstup napětí
+- Katoda (-) → výstup / GND
+
+⚠️ Dioda musí být zapojená správně polaritně, jinak nevede proud.
+
+### Důležité parametry
+- Uf (forward voltage): úbytek napětí v propustném směru
+- If: maximální proud v propustném směru
+- Vr: maximální zpětné napětí
+- Recovery time: rychlost přepínání (u rychlých diod)
+
+### Praktické poznámky
+- Špatné zapojení = dioda nefunguje (nebo se poškodí při přepětí)
+- Vždy má úbytek napětí (~0,7 V u křemíku)
+- Používá se jako ochrana proti „reverse polarity“
+- U motorů se používá flyback dioda (ochrana proti indukčnímu napětí)
+- LED je speciální typ diody (svítí)
+
+### Příklady použití
+- Ochrana napájení (proti přepólování baterie)
+- Usměrňovací můstek (AC → DC)
+- Ochrana relé a motorů (flyback dioda)
+- Signálové obvody
+- Logické OR spojování signálů (diodová logika)
+
+### Vzorečky
+
+#### Úbytek napětí na diodě
+Uout = Uin - Uf  
+
+---
+
+#### Výkon na diodě
+P = Uf × I  
+
+- P = výkon (W)
+- Uf = úbytek napětí
+- I = proud
+
+---
+
+#### Proud v propustném směru (ideální model)
+I ≈ 0 (v závěrném směru)
+I > 0 (v propustném směru)
