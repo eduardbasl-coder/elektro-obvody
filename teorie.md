@@ -446,3 +446,172 @@ P = Uf × I
 #### Proud v propustném směru (ideální model)
 I ≈ 0 (v závěrném směru)
 I > 0 (v propustném směru)
+
+## 🧲 Cívka (Induktor)
+
+### Základní informace
+- Typ: Pasivní elektronická součástka
+- Kategorie: Induktory
+- Jednotka: Henry (H)
+- Polarita: Ne
+- Schématická značka: L
+- Hlavní funkce: Ukládání energie do magnetického pole
+- Typické hodnoty: µH až H
+- Typický proud: mA až desítky A (dle typu)
+
+### Popis
+Cívka je součástka, která ukládá energii do magnetického pole při průchodu elektrického proudu. Brání rychlým změnám proudu v obvodu.
+
+### Použití
+- DC-DC měniče (Buck/Boost Converter)
+- Filtrace napájení
+- Potlačení šumu
+- Relé a elektromagnety
+- Transformátory
+- Rádiové a vysokofrekvenční obvody
+
+### Jak se zapojuje
+Cívka se zapojuje sériově nebo paralelně podle účelu. Nemá polaritu, takže ji lze zapojit libovolným směrem.
+
+### Důležité parametry
+- Indukčnost: Schopnost ukládat energii do magnetického pole (H)
+- Maximální proud: Proud, který může cívkou protékat bez poškození
+- DC odpor (DCR): Odpor vinutí cívky
+- Saturační proud: Proud, při kterém se jádro začne magneticky saturovat
+
+### Praktické poznámky
+- Cívka nemá polaritu.
+- Brání rychlým změnám proudu.
+- Při náhlém odpojení proudu může vytvořit vysoké napětí.
+- Proto se u relé a motorů používá ochranná dioda (flyback dioda).
+- Ve spínaných zdrojích je jednou z nejdůležitějších součástek.
+
+### Příklady použití
+- Buck Converter (12V → 5V)
+- Boost Converter (5V → 12V)
+- Relé
+- Elektromagnetický zámek
+- Filtrace napájení mikrokontrolérů
+- Potlačení elektromagnetického rušení (EMI)
+
+### Vzorečky
+
+#### Indukčnost
+U = L × (dI/dt)
+
+- U = napětí (V)
+- L = indukčnost (H)
+- dI/dt = rychlost změny proudu
+
+---
+
+#### Energie uložená v cívce
+E = 1/2 × L × I²
+
+- E = energie (J)
+- L = indukčnost (H)
+- I = proud (A)
+
+---
+
+#### Reaktance cívky (AC)
+XL = 2 × π × f × L
+
+- XL = induktivní reaktance (Ω)
+- f = frekvence (Hz)
+- L = indukčnost (H)
+
+## 🔘 Tlačítko
+
+### Základní informace
+- Typ: Elektromechanická součástka
+- Kategorie: Spínače
+- Jednotka: Nemá
+- Polarita: Ne
+- Schématická značka: SW
+- Hlavní funkce: Dočasné spojení nebo rozpojení obvodu po stisku
+- Typické napětí: dle typu
+- Typický proud: dle typu
+
+### Popis
+Tlačítko je spínací prvek, který po stisku změní stav obvodu. Po uvolnění se vrátí do původního stavu.
+
+### Použití
+- Uživatelský vstup
+- Reset tlačítka
+- Ovládání mikrokontrolérů
+- Spouštění funkcí zařízení
+- Nouzové vypínače
+
+### Jak se zapojuje
+Tlačítko se nejčastěji zapojuje s pull-up nebo pull-down rezistorem, aby vstup neměl nedefinovaný stav.
+
+### Důležité parametry
+- Maximální napětí
+- Maximální proud
+- Počet kontaktů
+- Životnost (počet sepnutí)
+
+### Praktické poznámky
+- Nemá polaritu.
+- Bez pull-up nebo pull-down rezistoru může být stav vstupu nestabilní.
+- Mechanická tlačítka často trpí zákmity kontaktů (debouncing).
+- Většina mikrokontrolérů má interní pull-up rezistory.
+
+### Příklady použití
+- Reset tlačítko na Arduino
+- Zapnutí LED po stisku
+- Ovládání menu na displeji
+- Spuštění programu na ESP32
+
+### Vzorečky
+
+Tlačítko samo o sobě nemá vlastní důležité vzorce.
+Nejčastěji se používá s Ohmovým zákonem a pull-up/pull-down rezistory.
+
+## 🎚️ Přepínač
+
+### Základní informace
+- Typ: Elektromechanická součástka
+- Kategorie: Spínače
+- Jednotka: Nemá
+- Polarita: Ne
+- Schématická značka: SW
+- Hlavní funkce: Trvalé spojení nebo rozpojení obvodu
+- Typické napětí: dle typu
+- Typický proud: dle typu
+
+### Popis
+Přepínač umožňuje ručně měnit stav obvodu a po přepnutí zůstává ve zvolené poloze.
+
+### Použití
+- Hlavní vypínače zařízení
+- Volba režimu zařízení
+- Zapnutí a vypnutí napájení
+- Přepínání mezi obvody
+
+### Jak se zapojuje
+Přepínač se zapojuje sériově s obvodem, který má ovládat. Nemá polaritu.
+
+### Důležité parametry
+- Maximální napětí
+- Maximální proud
+- Počet pólů a pozic
+- Typ kontaktů (SPST, SPDT, DPDT)
+
+### Praktické poznámky
+- Nemá polaritu.
+- Musí být dimenzován na očekávaný proud.
+- Pro vyšší proudy se používají výkonové přepínače.
+- Mechanické kontakty se mohou časem opotřebovat.
+
+### Příklady použití
+- ON/OFF vypínač napájení
+- Přepnutí mezi bateriovým a síťovým napájením
+- Volba provozního režimu zařízení
+- Ovládání ventilátoru
+
+### Vzorečky
+
+Přepínač nemá vlastní důležité vzorce.
+Při návrhu obvodu se používá Ohmův zákon a výpočty proudu zátěže.
